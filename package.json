@@ -19,7 +19,8 @@
   },
   "scripts": {
     "start": "expo start",
-    "ios": "expo start --ios"
+    "ios": "expo start --ios",
+    "postinstall": "npx --yes patch-package@8.0.1"
   },
   "private": true
 }

@@ -1,0 +1,14 @@
+diff --git a/node_modules/expo-router/build/useScreens.js b/node_modules/expo-router/build/useScreens.js
+index fec2012..c84b14e 100644
+--- a/node_modules/expo-router/build/useScreens.js
++++ b/node_modules/expo-router/build/useScreens.js
+@@ -323,7 +323,8 @@ function getQualifiedRouteComponent(value) {
+                 }
+             });
+         }, [
+-            navigation
++            navigation,
++            route
+         ]);
+         const hasRouteKey = !!route?.key;
+         if (isGuarded) {
