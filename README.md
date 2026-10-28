@@ -10,9 +10,9 @@ Navigate to a stack screen that is already mounted, with new params. The screen 
 
 ## Versions
 
-- expo 58.0.21 (`create-expo-app@latest`, blank-typescript template)
+- expo 58.0.21 (`create-expo-app@latest`, blank-typescript template; `npx expo install --fix` moved react-native from 0.88.1 to 0.88.0 so `npx expo-doctor` passes)
 - expo-router 58.0.28 (latest on npm on 2026-10-28)
-- react-native 0.88.1, react 19.3.0, react-native-screens 4.30.1
+- react-native 0.88.0, react 19.3.0, react-native-screens 4.30.1
 - Expo Go 58.0.7 on an iPhone 17 Pro simulator, iOS 26.5 (Xcode 27.1)
 
 The app has no dependencies beyond the template and expo-router's own peers. `.npmrc` sets `legacy-peer-deps=true`. Without it, `npm ci` fails on a react-dom peer conflict that comes from the template and expo-router's web dependencies, not from this repro.
